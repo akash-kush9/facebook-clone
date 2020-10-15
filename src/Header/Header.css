@@ -1,0 +1,168 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  position: sticky;
+  z-index: 100;
+  border-bottom: 1px solid lightgray;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  width: 100vw;
+  height: 60px;
+  box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+.header::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.header {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.header__left {
+  display: flex;
+  flex: 0.2;
+
+  align-items: center;
+}
+.header__center {
+  display: flex;
+  flex: 0.6;
+  justify-content: space-evenly;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+  align-items: center;
+}
+.header__right {
+  flex: 0.2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__rightInfo {
+  display: flex;
+  align-items: center;
+}
+.header__rightInfo > .MuiAvatar-root {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.header__rightInfo > h3 {
+  font-weight: 790;
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.header__center .MuiSvgIcon-root {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: gray !important;
+  cursor: pointer;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+.header__right .MuiSvgIcon-root {
+  color: gray !important;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.header__center .MuiSvgIcon-root:hover {
+  border-bottom: 3px solid #0e5eaa !important;
+  color: #0e5eaa !important;
+  box-shadow: 2px 2px 10px 01px rgba(0, 0, 225, 0.4);
+  border-radius: 2px 2px 10px 10px;
+}
+
+.header__right .MuiSvgIcon-root:hover {
+  border-bottom: 3px solid #0e5eaa !important;
+  color: #0e5eaa !important;
+  box-shadow: 2px 2px 10px 01px rgba(0, 0, 225, 0.4);
+  border-radius: 2px 2px 10px 10px;
+}
+.header__searchContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: lightgray;
+  border-radius: 20px;
+}
+.header__searchIcon {
+  color: black;
+  padding: 5px;
+}
+.header__searchInput {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  outline-width: 0px;
+}
+
+.header__facebookLogo {
+  font-size: xx-large !important;
+  padding-left: 10px;
+  color: #0e5eaa !important;
+  cursor: pointer;
+  margin-left: 5px;
+}
+@media (max-width: 1200px) {
+  .header__left {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+  }
+  .header__searchContainer {
+    background-color: white;
+  }
+  .header__searchContainer > input {
+    display: none;
+  }
+  .header__center {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid lightgray;
+    justify-content: center;
+  }
+  .header__right {
+    margin-top: 5px;
+    border-bottom: 1px solid lightgray;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__right > p {
+    display: none;
+  }
+  .header__SVGIcons:hover {
+    border-bottom: none;
+    color: #0e5eaa !important;
+    box-shadow: none;
+    border-radius: 0px;
+    margin-bottom: 2px;
+  }
+  .header__facebookLogo {
+    margin-left: 0px;
+  }
+  .header__rightInfo > .MuiAvatar-root {
+    margin-left: 2px;
+  }
+  .header__rightInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__rightInfo > h3 {
+    display: none;
+  }
+  .header__SVGIcons {
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+}

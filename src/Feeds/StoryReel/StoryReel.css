@@ -1,0 +1,36 @@
+.storyReel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  flex: 1;
+  padding: 10px;
+}
+
+/*
+.storyReel__container {
+  min-height: 250px;
+  height: 300px;
+  border: 1px solid red;
+  width: 200px;
+  min-width: 200px;
+  position: relative;
+  border-radius: 20px;
+  margin: 10px;
+} */
+
+/* ::-webkit-scrollbar {
+  height: 2px;
+}
+::-webkit-scrollbar-track {
+  background: lightgray;
+}
+::-webkit-scrollbar-thumb {
+  background: #0e5eaa;
+}
+::-webkit-scrollbar-button:single-button {
+  background-color: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+} */

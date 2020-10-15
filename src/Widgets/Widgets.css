@@ -1,0 +1,22 @@
+.widgets {
+  display: flex;
+  flex-direction: column;
+  flex: 0.4;
+  min-width: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.widgets__iframes {
+  margin: 10px;
+  width: 100%;
+  min-height: 350px;
+  object-fit: contain;
+  height: 100%;
+}
+
+@media (max-width: 990px) {
+  .widgets {
+    display: none;
+  }
+}
